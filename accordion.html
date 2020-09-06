@@ -22,7 +22,7 @@
       
     </div>
     <div class="section">
-      <a href="#" class="section-title">Accordion Section-title One</a>
+      <a href="#" class="section-title">Accordion Section-title Two</a>
       <div class="section-content" id="accordion-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet 
           aliquam libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
@@ -34,7 +34,7 @@
       
     </div>
     <div class="section">
-      <a href="#" class="section-title">Accordion Section-title One</a>
+      <a href="#" class="section-title">Accordion Section-title Three</a>
       <div class="section-content" id="accordion-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet 
           aliquam libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
@@ -50,6 +50,17 @@
   <script>
     $(document).ready(function(){
       $(".section-title").click(function(){
+        
+          if($(this).hasClass("active")){
+            $(".section-title").removeClass("active");
+            $(this).toggleClass("active")
+          }
+          else{
+            $(".section-title").removeClass("active");
+
+          }
+
+        
         $(this).toggleClass("active")
       });
     });
