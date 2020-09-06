@@ -40,5 +40,10 @@ p {
 .section:last-child .section-title{
   border-bottom: none;
 }
-
+.section-content{
+  display: none;
+}
+.active+.section-content{
+  display: block;
+}
 

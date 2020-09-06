@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="jquery-3.5.1.min.js"></script>
-  <link rel="stylesheet" href="accordion.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accordion</title>
+  <script src="jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="accordion.css">
 </head>
 <body>
   <div class="accordion">
     <div class="section">
-      <a href="accordion-1" class="section-title">Accordion Section-title One</a>
+      <a href="#" class="section-title">Accordion Section-title One</a>
       <div class="section-content" id="accordion-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet 
           aliquam libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
@@ -22,7 +22,7 @@
       
     </div>
     <div class="section">
-      <a href="accordion-1" class="section-title">Accordion Section-title One</a>
+      <a href="#" class="section-title">Accordion Section-title One</a>
       <div class="section-content" id="accordion-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet 
           aliquam libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
@@ -34,7 +34,7 @@
       
     </div>
     <div class="section">
-      <a href="accordion-1" class="section-title">Accordion Section-title One</a>
+      <a href="#" class="section-title">Accordion Section-title One</a>
       <div class="section-content" id="accordion-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet 
           aliquam libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
@@ -49,8 +49,10 @@
   </div>
   <script>
     $(document).ready(function(){
-      
-    })
+      $(".section-title").click(function(){
+        $(this).toggleClass("active")
+      });
+    });
   </script>
    
 </body>
